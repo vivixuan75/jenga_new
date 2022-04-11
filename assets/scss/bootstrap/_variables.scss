@@ -1,0 +1,205 @@
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #231815;
+$black:    #000;
+// scss-docs-end gray-color-variables
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+) !default;
+// scss-docs-end gray-colors-map
+// fusv-enable
+
+// scss-docs-start color-variables
+$blue:    #76bfeb;
+$indigo:  #6610f2 !default;
+$purple:  #bc5fa1;
+$pink:    #ffede3;
+$red-500: #e83541;
+$red:     #e50012;
+$orange:  #fd7e14 !default;
+$yellow:  #f2b129;
+$yellow-light:#f8e8a0;
+$green:   #198754 !default;
+$teal:    #7dbe28;
+$cyan:    #1789c1;
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "red-500":    $red-500,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "yellow-light":     $yellow-light,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-900,
+  "blue-shadow":#0c3573,
+);
+// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+$primary:       #1250b0;
+$secondary:     #ed4b4b;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+// $dark:          $gray-900 !default;
+$dark:          #313333;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       #0CCABC,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "red":        #de051b, 
+  "red-500":    $red-500,
+  "yellow":     #fef1b4, 
+  "yellow-light": $yellow-light,
+  "pink":       $pink, 
+  "pink2":      #FF7289, 
+  "orange":     $orange, 
+  "green":      #77CF48, 
+  "purple":     $purple, 
+  "blue":       #40B9F3, 
+  "brown":      #C69D5D, 
+  "gray-dark":  $gray-900,
+);
+
+
+$grid-breakpoints: (
+    xs: 0,
+    xxs: 375px,
+    xsm: 425px,
+    sm: 576px,
+    smm: 648px,
+    md: 768px,
+    lg: 992px,
+    llg: 1024px,
+    xl: 1200px,
+    xxl: 1400px,
+    2xl: 1600px,
+    3xl: 1800px,
+);
+
+$custom-font-sizes: (
+    xs: 0.75rem,
+    sm: 0.875rem,
+    base: 1rem,
+    md: 1.125rem,
+    lg: 1.25rem,
+    xl: 1.5rem,
+    2xl: 1.875rem,
+    25xl: 2rem,
+    3xl: 2.25rem,
+    h1: 2.5rem,
+    35xl: 2.75rem,
+    4xl: 3rem,
+    5xl: 3.25rem,
+    6xl: 3.75rem,
+    7xl: 4rem,
+    8xl: 4.25rem,
+    9xl: 4.5rem,
+    xxl: 5rem,
+    2xxl: 5.5rem,
+    3xxl: 6rem,
+    4xxl: 6.5rem,
+    5xxl: 7rem,
+    6xxl: 7.5rem,
+    7xxl: 8rem,
+    8xxl: 8.5rem,
+    9xxl: 9rem,
+    10xxl: 9.5rem,
+    11xxl: 10rem,
+    12xxl: 10.5rem,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  // xxl: 1320px
+);
+
+// font-family
+$font-family-jfOpenhuninn: "jfOpenhuninn", sans-serif;
+$font-family-NotoSansTC: "NotoSansTC", sans-serif;
+$font-family-Roboto: "Roboto", sans-serif;
+$font-family-AwkwardBlack: "AwkwardBlack", sans-serif;
+$font-family-Francis: "Francis", sans-serif;
+$font-family-base: $font-family-Francis, $font-family-jfOpenhuninn;
+
+// font-size
+$font-size-base:    1rem;
+$font-size-md:      $font-size-base * 1.125;
+$font-size-lg:      $font-size-base * 1.25;
+$font-size-2lg:     $font-size-base * 1.4;
+$font-size-xl:      $font-size-base * 1.5;
+$font-size-2xl:     $font-size-base * 1.875;
+$font-size-25xl:    $font-size-base * 2;
+$font-size-3xl:     $font-size-base * 2.25;
+$font-size-h1:      $font-size-base * 2.5;
+$font-size-35xl:    $font-size-base * 2.75;
+$font-size-4xl:     $font-size-base * 3;
+$font-size-5xl:     $font-size-base * 3.25;
+$font-size-6xl:     $font-size-base * 3.5;
+$font-size-7xl:     $font-size-base * 3.875;
+$font-size-8xl:     $font-size-base * 4;
+$font-size-9xl:     $font-size-base * 4.25;
+$font-size-xxl:     $font-size-base * 5;
+$font-size-2xxl:    $font-size-base * 6;
+
+$font-weight-bold: 700;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+);
+
+$component-active-bg: $dark;
+$dropdown-link-hover-bg: $pink;
+// $table-hover-bg: $pink;
+$form-floating-padding-x: 1.5rem;

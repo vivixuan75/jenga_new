@@ -1,0 +1,101 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "z-index": (
+      property: z-index,
+      class: 'z',
+      values: -2 -1 1 2 3 4 5 10 50 100 150 200 1020 1050,
+    ),
+    "min-viewport-height": (
+      property: min-height,
+      class: min-vh,
+      values: (
+        50: 50vh,
+        100: 100vh
+        )
+    ),
+    "width": (
+      property: width,
+      responsive: true,
+      class: w,
+      values: (
+        10: 10%,
+        15: 15%,
+        20: 20%,
+        25: 25%,
+        30: 30%,
+        40: 40%,
+        45: 45%,
+        47: 47%,
+        50: 50%,
+        55: 55%,
+        60: 60%,
+        65: 65%,
+        70: 70%,
+        75: 75%,
+        80: 80%,
+        85: 85%,
+        90: 90%,
+        95: 95%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    "height": (
+      property: height,
+      responsive: true,
+      class: h,
+      values: (
+        20: 20%,
+        30: 30%,
+        40: 40%,
+        50: 50%,
+        70: 70%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    "size": (
+      property: width,
+      responsive: true,
+      class: 'sw',
+      values: (
+        auto: auto,
+        0d5:  0.5rem,
+        0d7:  0.7rem,
+        1:  1rem,
+        2:  1.5rem,
+        3:  2rem,
+        4:  2.5rem,
+        5:  3rem,
+        6:  3.5rem,
+        7:  4rem,
+        8:  4.5rem,
+        9:  5rem,
+        10: 5.5rem,
+        sm: 7rem,
+        lg: 9rem,
+        11: 10rem,
+        12: 11rem,
+        13: 12rem,
+        14: 13rem,
+        15: 14rem,
+        16: 15rem,
+        17: 16rem,
+        18: 17rem,
+        19: 18rem,
+        20: 19rem,
+        21: 20rem,
+      )
+    ),
+    "white-space": (
+      property: white-space,
+      responsive: true,
+      class: text,
+      values: (
+        wrap: normal,
+        nowrap: nowrap,
+      )
+    ),
+  )
+);

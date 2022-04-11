@@ -1,0 +1,138 @@
+html,
+body{
+    font-family: $font-family-base;
+    font-size: $font-size-md;
+    font-weight:500;
+    color: $gray-900;
+    overflow-x: hidden;
+    position: relative;    
+}
+
+h1{
+    font-size:$font-size-xl;
+
+    @include media-breakpoint-up(md){
+        font-size:$font-size-2xl;
+    }
+
+    @include media-breakpoint-up(xl){
+        font-size:$font-size-3xl;
+    }
+}
+
+h2{
+    font-size:$font-size-lg;
+
+    @include media-breakpoint-up(md){
+        font-size:$font-size-2lg;
+    }
+
+    @include media-breakpoint-up(xl){
+        font-size:$font-size-xl;
+    }
+}
+
+h3{
+    font-size:$font-size-2lg;
+}
+
+p{
+    font-size:$font-size-sm;
+
+    @include media-breakpoint-up(xl){
+        font-size:$font-size-base;
+    }
+}
+
+li{
+    font-size:$font-size-base;
+    font-weight:500;
+
+    @include media-breakpoint-up(xl){
+        font-size:$font-size-md;
+    }
+}
+
+@keyframes bounce{
+    0%{
+        top:15%;
+        transform: rotate(10deg);
+    }
+
+    50%{
+        top:25%;
+        transform: rotate(35deg);
+    }
+
+    100%{
+        top:15%;
+        transform: rotate(10deg);
+    }
+} 
+
+@keyframes scaleX {
+    0%, 100% {
+        transform: scaleX(0);
+    }
+
+    25%{
+        transform: scaleX(1);
+    }
+    
+    50% {
+        transform: scaleX(0);
+    }
+
+    75% {
+        transform: scaleX(-1);
+    }
+}
+
+@keyframes scaleY {
+    0% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(-1);
+    }
+}
+
+// 旋轉
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+
+    50%, 100%{
+        transform: rotate(1440deg);
+    }
+}
+
+// 上下漂浮
+@keyframes drift-effect{
+    0%{
+        transform: translate(-150%, 30%) scale(.1);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translate(0,0) scale(1);
+        opacity: 1;
+        transform-delay: 2s;
+    }
+    
+}
+
+@keyframes driftUpDown-effect{
+    0%{
+        transform: translate(0,0) rotate(0deg);
+    }
+
+    50%{
+        transform: translate(0, 10rem) rotate(-20deg);  
+    }
+
+    100%{
+        transform: translate(0,0) rotate(0deg);
+    }
+}

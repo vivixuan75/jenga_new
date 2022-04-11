@@ -1,0 +1,47 @@
+// 黑體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+// 拙黑體
+@font-face {
+    font-family: 'AwkwardBlack';
+    src: local('Awkward Black'), 
+        url('~/assets/fonts/Awkward/AwkwardBlack_V1_1.woff2') format('woff2'),
+        url('~/assets/fonts/Awkward/AwkwardBlack_V1_1.woff') format('woff');
+} 
+
+// 粉圓體
+@font-face {
+    font-family: 'jfOpenhuninn';
+    src: local('jfOpenhuninn'), 
+        url('~/assets/fonts/jfopenhuninn/jf-openhuninn.woff2') format('woff2'),
+        url('~/assets/fonts/jfopenhuninn/jf-openhuninn.woff') format('woff');
+} 
+
+@font-face {
+    font-family: 'Francis';
+    src: local('Francis'), 
+        url('~/assets/fonts/Francis/Francis Gothic Reduced Normal.woff2') format('woff2'),
+        url('~/assets/fonts/Francis/Francis Gothic Reduced Normal.woff') format('woff');
+}
+
+
+.font-jfOpenhuninn{
+    font-family: 'jfOpenhuninn', sans-serif;
+}
+
+.font-NotoSansTC{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.font-Roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-AwkwardBlack {
+    font-family: 'AwkwardBlack';
+}
+
+.font-Francis {
+    font-family: 'Francis';
+}
