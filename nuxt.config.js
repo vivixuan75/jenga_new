@@ -1,5 +1,7 @@
 let path = ''
 
+const hostname = 'http://jo.joy.com.tw/action/jenga/'
+
 const meta = {
   title: '佳音英語 | Tumble Tower 來玩疊疊樂!',
   desc: '來玩疊疊樂! 暢玩六國學英文',
@@ -34,12 +36,11 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: hostname + '/favicon.ico' }
     ]
   },
 
   css: ['~/assets/scss/style.scss'],
-  // css: ['./assets/scss/style.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -48,47 +49,17 @@ export default {
 
   components: true,
 
-  buildModules: [    
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  buildModules: [ 
   ],
-
-  
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/bootstrap
-    // 'bootstrap-vue/nuxt',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  // build: {
-  //   extractCSS: true,
-  // },
-
   build: {
     extractCSS: true,
-    babel: {
-      compact: true
-    },
-    extend (config, ctx) {
-      config.performance.maxAssetSize = 4000 * 1024
-    },
-    filenames: {
-      app: ({ isDev, isModern }) =>
-        isDev
-          ? `[name]${isModern ? ".modern" : ""}.js`
-          : `[contenthash:7]${isModern ? ".modern" : ""}.js`,
-      chunk: ({ isDev, isModern }) =>
-        isDev
-          ? `[name]${isModern ? ".modern" : ""}.js`
-          : `[name][contenthash:3]${isModern ? ".modern" : ""}.js`,
-      css: ({ isDev }) => (isDev ? "[name].css" : "css/[contenthash:2].css"),
-      img: ({ isDev }) =>
-        isDev ? "[path][name].[ext]" : "img/[name].[contenthash:7].[ext]",
-      font: ({ isDev }) =>
-        isDev ? "[path][name].[ext]" : "fonts/[name].[contenthash:7].[ext]",
-      video: ({ isDev }) =>
-        isDev ? "[path][name].[ext]" : "videos/[name].[contenthash:7].[ext]"
-    }
   },
 
   server: {
@@ -96,6 +67,6 @@ export default {
   },
 
   router:{
-    base:path,
-  }
+    base: hostname,
+  },
 }
